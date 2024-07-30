@@ -1,0 +1,62 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+
+        <IsPackable>false</IsPackable>
+
+        <RootNamespace>MarsRoverTests</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="coverlet.collector" Version="6.0.2">
+          <PrivateAssets>all</PrivateAssets>
+          <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+        <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.10.0" />
+        <PackageReference Include="xunit" Version="2.9.0" />
+        <PackageReference Include="xunit.runner.visualstudio" Version="2.8.2">
+          <PrivateAssets>all</PrivateAssets>
+          <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\OfficeCleaner10\OfficeCleaner10.csproj" />
+      <ProjectReference Include="..\OfficeCleaner11\OfficeCleaner11.csproj" />
+      <ProjectReference Include="..\OfficeCleaner12\OfficeCleaner12.csproj" />
+      <ProjectReference Include="..\OfficeCleaner1\OfficeCleaner1.csproj" />
+      <ProjectReference Include="..\OfficeCleaner2\OfficeCleaner2.csproj" />
+      <ProjectReference Include="..\OfficeCleaner3\OfficeCleaner3.csproj" />
+      <ProjectReference Include="..\OfficeCleaner4\OfficeCleaner4.csproj" />
+      <ProjectReference Include="..\OfficeCleaner5\OfficeCleaner5.csproj" />
+      <ProjectReference Include="..\OfficeCleaner6\OfficeCleaner6.csproj" />
+      <ProjectReference Include="..\OfficeCleaner7\OfficeCleaner7.csproj" />
+      <ProjectReference Include="..\OfficeCleaner8\OfficeCleaner8.csproj" />
+      <ProjectReference Include="..\OfficeCleaner9\OfficeCleaner9.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Update="Input_empty.txt">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </None>
+      <None Update="Input_given_sample.txt">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="Input_one.txt">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="Input_large.txt">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="Input_only_west.txt">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="Input_wiping.txt">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+    </ItemGroup>
+
+</Project>
